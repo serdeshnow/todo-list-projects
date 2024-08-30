@@ -1,6 +1,7 @@
 import "./styles/App.scss";
 import "./styles/components.scss";
-import { Header, Form } from "./components";
+import { Header, Form, Loader } from "./components";
+import { getRandomLoad } from "./utils";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -9,26 +10,35 @@ function App() {
 	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
-		axios.get("https://jsonplaceholder.typicode.com/todos").then((responce) => {
-			setTodos(responce.data);
-			setIsLoading(false);
-		});
+		setTimeout(() => {
+			axios
+				.get("https://jsonplaceholder.typicode.com/todos")
+				.then((responce) => {
+					setTodos(responce.data);
+				})
+				.finally(() => {
+					setIsLoading(false);
+				});
+		}, getRandomLoad());
 	}, []);
 
 	return (
-		<section className="app padding--width">
+		<section className="app padding--width flex--column">
 			<Header />
-			{/* <Form/> */}
-			<ul className="todos__list">
+			{/* <Form /> */}
+			<ul className="todos__list flex--column">
 				{isLoading ? (
-					<>loading...</>
+					<Loader />
 				) : (
 					todos.map((todo) => {
 						return (
-							<div key={todo.id} className="todos__item">
+							<li key={todo.id} className="todos__item flex">
 								<span className="todos__num">{todo.id}</span>
-								{todo.title}
-							</div>
+								<p className="todos__item-description">{todo.title}</p>
+								<button className="todos__btn btn--delete" disabled>
+									Delete task
+								</button>
+							</li>
 						);
 					})
 				)}

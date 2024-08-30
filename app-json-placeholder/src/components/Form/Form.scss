@@ -4,9 +4,10 @@
 
 	.input {
 		width: min(960px, 50vw);
-		height: 46px;
 		padding-left: var(--indent-m);
 		padding-right: calc(var(--indent-m) + 36px + var(--indent-m));
+		padding-block: var(--indent-s);
+		line-height: 32px;
 		border: none;
 		outline: none;
 		border-radius: var(--border-radius);
@@ -17,7 +18,8 @@
 			margin-bottom: var(--indent-lg);
 		}
 
-		&:focus {
+		&:focus,
+		&:hover {
 			box-shadow: var(--box-shadow);
 		}
 	}

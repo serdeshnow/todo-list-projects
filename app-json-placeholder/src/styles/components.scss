@@ -27,11 +27,13 @@
 }
 
 .btn--delete {
+	height: 34px;
 	display: flex;
+	align-items: center;
 	background-color: var(--color-blue);
 	color: var(--color-light);
 	border-radius: var(--border-radius);
-	padding: 10px 30px;
+	padding: 5px 15px;
 	border: none;
 	font-size: var(--font-size-s);
 	transition: var(--transition-default);

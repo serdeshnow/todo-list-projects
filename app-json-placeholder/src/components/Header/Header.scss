@@ -1,17 +1,17 @@
 .header {
 	display: flex;
-	height: 46px;
 	align-items: center;
 	justify-content: space-between;
 	background-color: var(--color-blue);
 	border-radius: var(--border-radius);
-	padding-inline: var(--indent-m);
+	padding: var(--indent-s) var(--indent-m);
 	color: var(--color-light);
 	margin-bottom: var(--indent-m);
 
 	&__techs {
 		&-list {
 			display: flex;
+			flex-wrap: wrap;
 			gap: var(--indent-s);
 			font-size: var(--font-size-s);
 		}

@@ -11,9 +11,9 @@ export const Header = () => {
 				</a>
 			</h1>
 			<ul className="header__techs-list">
-				{TECHS.map((tech) => {
+				{TECHS.map((tech, index) => {
 					return (
-						<li className="header__techs-item">
+						<li className="header__techs-item" key={index}>
 							<code>{tech}</code>
 						</li>
 					);

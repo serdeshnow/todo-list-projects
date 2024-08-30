@@ -1,26 +1,42 @@
 .app {
-	height: 100%;
-	padding-block: 7px;
+	min-height: 100vh;
+	padding-block: var(--indent-s);
 }
 
 .todos {
 	&__list {
-		// background-color: aqua;
+		flex: 1 0 auto;
 	}
 
 	&__item {
-		height: 46px;
-		line-height: 46px;
+		padding-block: var(--indent-xs);
+		line-height: var(--indent-lg);
 		font-size: var(--font-size-s);
 		vertical-align: middle;
+		align-items: center;
 		background-color: var(--color-light);
 		border-radius: var(--border-radius);
 		padding-inline: var(--indent-m);
 		margin-bottom: var(--indent-m);
+		gap: var(--indent-m);
+		transition: var(--transition-default);
+
+		&-description {
+			line-height: 25px;
+		}
+
+		&:hover {
+			box-shadow: var(--box-shadow);
+		}
 	}
 
 	&__num {
-		padding-right: var(--indent-m);
+		cursor: default;
 		font-weight: var(--font-weight-semibold);
+	}
+
+	&__btn {
+		margin-left: auto;
+		min-width: 111px;
 	}
 }

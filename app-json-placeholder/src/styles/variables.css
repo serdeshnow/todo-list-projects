@@ -20,6 +20,7 @@
 
 	--box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
 
+	--indent-xs: 3px;
 	--indent-s: 7px;
 	--indent-m: 14px;
 	--indent-lg: 40px;
