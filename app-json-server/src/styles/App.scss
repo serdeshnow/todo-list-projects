@@ -1,0 +1,42 @@
+.app {
+	min-height: 100vh;
+	padding-block: var(--indent-s);
+}
+
+.todos {
+	&__list {
+		flex: 1 0 auto;
+	}
+
+	&__item {
+		padding-block: var(--indent-xs);
+		line-height: var(--indent-lg);
+		font-size: var(--font-size-s);
+		vertical-align: middle;
+		align-items: center;
+		background-color: var(--color-light);
+		border-radius: var(--border-radius);
+		padding-inline: var(--indent-m);
+		margin-bottom: var(--indent-m);
+		gap: var(--indent-m);
+		transition: var(--transition-default);
+
+		&-description {
+			line-height: 25px;
+		}
+
+		&:hover {
+			box-shadow: var(--box-shadow);
+		}
+	}
+
+	&__num {
+		cursor: default;
+		font-weight: var(--font-weight-semibold);
+	}
+
+	&__btn {
+		margin-left: auto;
+		min-width: 111px;
+	}
+}

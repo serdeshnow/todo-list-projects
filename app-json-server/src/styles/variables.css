@@ -1,0 +1,44 @@
+* {
+	--color-app-bg: #d9dde8;
+	--color-light: #ffffff;
+	--color-gray: #748392;
+	--color-dark: #000000;
+	--color-blue: #3b37ff;
+	--color-dark-blue: #2420e2;
+	--color-red: #e00000;
+	--color-red-active: #fc0000;
+
+	--font-size-lg: 24px;
+	--font-size-m: 18px;
+	--font-size-s: 15px;
+
+	--font-weight-thin: 300;
+	--font-weight-regular: 400;
+	--font-weight-semibold: 600;
+
+	--border-radius: 8px;
+
+	--box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+
+	--indent-xs: 3px;
+	--indent-s: 7px;
+	--indent-m: 14px;
+	--indent-lg: 40px;
+	--padding--width: min(320px, 16.667vw);
+
+	--transition-default: all 0.15s ease-in-out;
+	--transition-slow: all 0.3s ease-in-out;
+}
+
+.padding--width {
+	padding-inline: var(--padding--width);
+}
+
+.flex {
+	display: flex;
+}
+
+.flex--column {
+	display: flex;
+	flex-direction: column;
+}
