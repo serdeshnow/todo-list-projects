@@ -1,0 +1,26 @@
+.app {
+	height: 100%;
+	padding-block: 7px;
+}
+
+.todos {
+	&__list {
+		// background-color: aqua;
+	}
+
+	&__item {
+		height: 46px;
+		line-height: 46px;
+		font-size: var(--font-size-s);
+		vertical-align: middle;
+		background-color: var(--color-light);
+		border-radius: var(--border-radius);
+		padding-inline: var(--indent-m);
+		margin-bottom: var(--indent-m);
+	}
+
+	&__num {
+		padding-right: var(--indent-m);
+		font-weight: var(--font-weight-semibold);
+	}
+}

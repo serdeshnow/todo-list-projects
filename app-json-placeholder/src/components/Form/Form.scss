@@ -1,0 +1,49 @@
+.form {
+	align-items: center;
+	font-weight: var(--font-weight-semibold);
+
+	.input {
+		width: min(960px, 50vw);
+		height: 46px;
+		padding-left: var(--indent-m);
+		padding-right: calc(var(--indent-m) + 36px + var(--indent-m));
+		border: none;
+		outline: none;
+		border-radius: var(--border-radius);
+		margin-bottom: var(--indent-m);
+		transition: var(--transition-slow);
+
+		&__create {
+			margin-bottom: var(--indent-lg);
+		}
+
+		&:focus {
+			box-shadow: var(--box-shadow);
+		}
+	}
+
+	.span__create {
+		position: relative;
+
+		.btn--create {
+			width: 36px;
+			padding: 0px;
+			position: absolute;
+			right: 14px;
+			top: 5px;
+			cursor: pointer;
+		}
+	}
+
+	.span__search {
+		position: relative;
+
+		.search__logo {
+			width: 36px;
+			padding: 0px;
+			position: absolute;
+			right: 14px;
+			top: 5px;
+		}
+	}
+}
