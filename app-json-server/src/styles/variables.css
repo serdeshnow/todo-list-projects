@@ -2,6 +2,7 @@
 	--color-app-bg: #d9dde8;
 	--color-light: #ffffff;
 	--color-gray: #748392;
+	--color-dark-gray: #515961;
 	--color-dark: #000000;
 	--color-blue: #3b37ff;
 	--color-dark-blue: #2420e2;
@@ -41,4 +42,8 @@
 .flex--column {
 	display: flex;
 	flex-direction: column;
+}
+
+.margin-left--auto {
+	margin-left: auto;
 }
