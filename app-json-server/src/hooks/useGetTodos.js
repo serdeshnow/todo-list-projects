@@ -20,5 +20,5 @@ export const useGetTodos = () => {
 		}, getRandomLoad());
 	}, [refreshTodosFlag]);
 
-	return { todos, isLoading, refreshTodos };
+	return { todos, setTodos, isLoading, refreshTodos };
 };

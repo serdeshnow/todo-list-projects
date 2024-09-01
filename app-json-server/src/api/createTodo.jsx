@@ -21,14 +21,7 @@ import { DB_TODOS_URL } from "../constants";
 
 export const createTodo = async (title) => {
 	return await axios
-		.post(
-			DB_TODOS_URL,
-			{ title: title },
-			{
-				method: "POST",
-				headers: { "Content-Type": "application/json;charset=utf-8" },
-			},
-		)
+		.post(DB_TODOS_URL, { title: title })
 		.then((res) => {
 			if (res.status === 201) {
 				return res.data;

@@ -1,8 +1,26 @@
-import { useState } from "react";
+// import { useState } from "react";
 import search_img from "../../../../assets/svg/search_blue.svg";
 
-export const SearchInput = ({ handleSortClick, isSorted }) => {
-	const [searchValue, setSearchValue] = useState("");
+export const SearchInput = ({
+	todos,
+	setTodos,
+	searchValue,
+	setSearchValue,
+	isSorted,
+	handleSortClick,
+}) => {
+	// const [isSorted, setIsSorted] = useState(false);
+
+	// const handleSortClick = () => {
+	// 	console.log("handle check", todos);
+
+	// 	setIsSorted((prev) => !prev);
+	// 	if (!isSorted) {
+	// 		setTodos(todos.sort((a, b) => a.title.localeCompare(b.title)));
+	// 	} else {
+	// 		setTodos(todos.sort((a, b) => a.id - b.id));
+	// 	}
+	// };
 
 	return (
 		<span className="span__search flex">

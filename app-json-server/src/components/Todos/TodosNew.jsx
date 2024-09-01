@@ -2,13 +2,10 @@ import delete_img from "../../assets/svg/delete.svg";
 import edit_img from "../../assets/svg/edit.svg";
 import { deleteTodo } from "../../api";
 
-export const Todos = ({ todos, refreshTodos, handleEditClick, setIsEditing }) => {
+export const TodosNew = ({ todos, refreshTodos, handleEditClick }) => {
 	const handleTodoDeleteClick = (todoId) => {
 		deleteTodo(todoId)
-			.then(() => {
-				setIsEditing(false);
-				console.log(todoId, "TODO Deleted");
-			})
+			.then(() => console.log(todoId, "TODO Deleted"))
 			.finally(() => refreshTodos());
 	};
 

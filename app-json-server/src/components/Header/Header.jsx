@@ -1,6 +1,6 @@
 import "./Header.scss";
 
-const TECHS = ["React.js", "useState()", "useEffect()", "JSON Server"];
+const TECHS = ["React.js", "useState()", "useRef()", "useEffect()", "JSON Server"];
 
 export const Header = () => {
 	return (
