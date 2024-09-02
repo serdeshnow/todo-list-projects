@@ -51,7 +51,7 @@ export const EditInput = ({
 			>
 				<img src={accept_img} alt="accept" />
 			</button>
-			<button className="btn btn--deny" type="submit" onClick={handleDenyClick}>
+			<button className="btn btn--deny" type="submit" onClick={(e) => handleDenyClick(e)}>
 				<img src={deny_img} alt="deny" />
 			</button>
 		</span>
