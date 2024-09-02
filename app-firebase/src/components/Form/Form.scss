@@ -1,0 +1,44 @@
+.form {
+	--icon-width: 36px;
+	--form-sticky-indent: 15px;
+
+	position: sticky;
+	top: 0;
+	align-items: center;
+
+	background-color: var(--color-app-bg);
+	padding-top: var(--form-sticky-indent);
+	margin-bottom: var(--form-sticky-indent);
+	font-weight: var(--font-weight-semibold);
+
+	.input {
+		width: min(960px, 50vw);
+		padding-left: var(--indent-m);
+		padding-right: calc(var(--indent-m) + var(--icon-width) + var(--indent-m));
+		padding-block: var(--indent-s);
+		line-height: 32px;
+		border: none;
+		outline: none;
+		border-radius: var(--border-radius);
+		transition: var(--transition-slow);
+
+		&__create,
+		&__edit {
+			width: min(
+				calc(960px + var(--icon-width) + var(--indent-m) * 2),
+				calc(50vw + var(--icon-width) + var(--indent-m) * 2)
+			);
+			border: 1px solid var(--color-light);
+		}
+
+		&__edit {
+			background-color: #f5f5fd;
+			border: 1px solid var(--color-blue);
+		}
+
+		&:focus,
+		&:hover {
+			box-shadow: var(--box-shadow);
+		}
+	}
+}

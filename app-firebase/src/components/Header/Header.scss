@@ -1,0 +1,27 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--color-blue);
+	border-radius: var(--border-radius);
+	padding: var(--indent-s) var(--indent-m);
+	color: var(--color-light);
+	margin-bottom: var(--indent-m);
+
+	&__techs {
+		&-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: var(--indent-s);
+			font-size: var(--font-size-s);
+		}
+
+		&-item {
+			padding: 5px 15px;
+			font-weight: var(--font-weight-thin);
+			background-color: var(--color-dark-blue);
+			border-radius: var(--border-radius);
+			cursor: default;
+		}
+	}
+}

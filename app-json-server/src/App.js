@@ -1,6 +1,5 @@
 import "./styles/App.scss";
 import "./styles/components.scss";
-import "./components/Form/Form.scss";
 import { Form, Header, Loader, Todos } from "./components";
 import { useGetTodos, useEditTodo } from "./hooks";
 
@@ -14,7 +13,7 @@ function App() {
 		isEditing,
 		setIsEditing,
 		handleEditClick,
-	} = useEditTodo();
+	} = useEditTodo(); // Не самая удачная реализация
 
 	return (
 		<section className="app padding--width flex--column">

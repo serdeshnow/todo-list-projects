@@ -15,23 +15,24 @@ export const Todos = ({ todos, refreshTodos, handleEditClick, setIsEditing }) =>
 
 	return (
 		<ul className="todos__list flex--column">
-			{todos.map((todo) => (
-				<li key={todo.id} className="todos__item flex">
-					<p className="todos__item-description">{todo.title}</p>
-					<button
-						className="todos__btn margin-left--auto"
-						onClick={() => handleEditClick(todo)}
-					>
-						<img src={edit_img} alt="edit button" />
-					</button>
-					<button
-						className="todos__btn btn--delete"
-						onClick={() => handleTodoDeleteClick(todo.id)}
-					>
-						<img src={delete_img} alt="detele button" />
-					</button>
-				</li>
-			))}
+			{todos &&
+				todos.map((todo) => (
+					<li key={todo.id} className="todos__item flex">
+						<p className="todos__item-description">{todo.title}</p>
+						<button
+							className="todos__btn margin-left--auto"
+							onClick={() => handleEditClick(todo)}
+						>
+							<img src={edit_img} alt="edit button" />
+						</button>
+						<button
+							className="todos__btn btn--delete"
+							onClick={() => handleTodoDeleteClick(todo.id)}
+						>
+							<img src={delete_img} alt="detele button" />
+						</button>
+					</li>
+				))}
 		</ul>
 	);
 };
