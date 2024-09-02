@@ -1,0 +1,28 @@
+.span__request {
+	position: relative;
+	margin-bottom: var(--indent-m);
+	padding-inline: var(--indent-m);
+	width: min(
+		calc(960px + var(--icon-width) + var(--indent-m) * 2),
+		calc(50vw + var(--icon-width) + var(--indent-m) * 2)
+	);
+	justify-content: space-between;
+	min-height: var(--icon-width);
+	line-height: var(--icon-width);
+	transition: var(--transition-slow);
+
+	.request {
+		&__description {
+			color: var(--color-blue);
+		}
+
+		&__amount {
+			padding-inline: var(--indent-m);
+			color: var(--color-light);
+			background-color: var(--color-blue);
+			border-radius: var(--border-radius);
+			text-align: center;
+			cursor: default;
+		}
+	}
+}

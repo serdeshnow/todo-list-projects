@@ -12,7 +12,7 @@ export const useEditTodo = () => {
 		setCurrentTodoId(todo.id);
 		setTimeout(() => {
 			editInputRef.current.focus();
-		}, 0);
+		}, 0); // focus on the next tick
 	};
 
 	return {
