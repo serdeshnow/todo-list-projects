@@ -74,6 +74,8 @@ function App() {
 	// 	setTodos(newTodos);
 	// }, [debounceData]);
 
+	console.log(getDatabase());
+
 	return (
 		<section className="app padding--width flex--column">
 			<Header />
