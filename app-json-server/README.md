@@ -1,10 +1,12 @@
 # Project Using
 
-1. `>> cd app`
+1. `>> cd app-name`
 
 2. `>> npm i`
 
 3. `>> npm start`
+
+4. `>> json-server --watch src/db.json --port 3005`
 
 # Project Setup (already done)
 

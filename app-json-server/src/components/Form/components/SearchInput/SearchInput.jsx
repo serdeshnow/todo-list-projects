@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import "./SearchInput.scss";
 import search_img from "../../../../assets/svg/search_blue.svg";
 
 export const SearchInput = ({

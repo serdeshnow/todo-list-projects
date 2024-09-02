@@ -1,3 +1,4 @@
+import "./CreateInput.scss";
 import { useState } from "react";
 import create_img from "../../../../assets/svg/add.svg";
 import { createTodo } from "../../../../api";

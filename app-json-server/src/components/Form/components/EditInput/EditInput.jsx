@@ -1,8 +1,9 @@
+import "./EditInput.scss";
 import accept_img from "../../../../assets/svg/accept.svg";
 import deny_img from "../../../../assets/svg/deny.svg";
 import { editTodo } from "../../../../api";
 
-const EditInput = ({
+export const EditInput = ({
 	editInputRef,
 	input,
 	setInput,
@@ -56,5 +57,3 @@ const EditInput = ({
 		</span>
 	);
 };
-
-export default EditInput;

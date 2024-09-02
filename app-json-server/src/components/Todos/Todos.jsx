@@ -1,3 +1,4 @@
+import "./Todos.scss";
 import delete_img from "../../assets/svg/delete.svg";
 import edit_img from "../../assets/svg/edit.svg";
 import { deleteTodo } from "../../api";
@@ -16,9 +17,7 @@ export const Todos = ({ todos, refreshTodos, handleEditClick, setIsEditing }) =>
 		<ul className="todos__list flex--column">
 			{todos.map((todo) => (
 				<li key={todo.id} className="todos__item flex">
-					<p className="todos__item-description">
-						{todo.id} {todo.title}
-					</p>
+					<p className="todos__item-description">{todo.title}</p>
 					<button
 						className="todos__btn margin-left--auto"
 						onClick={() => handleEditClick(todo)}

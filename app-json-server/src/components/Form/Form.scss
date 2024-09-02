@@ -27,6 +27,12 @@
 				calc(960px + var(--icon-width) + var(--indent-m) * 2),
 				calc(50vw + var(--icon-width) + var(--indent-m) * 2)
 			);
+			border: 1px solid var(--color-light);
+		}
+
+		&__edit {
+			background-color: #f5f5fd;
+			border: 1px solid var(--color-blue);
 		}
 
 		&:focus,
@@ -77,100 +83,6 @@
 
 			&:hover {
 				--funnel-color: var(--color-dark-blue);
-			}
-		}
-	}
-
-	.span__search {
-		position: relative;
-		margin-bottom: var(--indent-m);
-
-		.search__logo {
-			width: var(--icon-width);
-			padding: 0px;
-			position: absolute;
-			right: calc(14px + 36px + 14px + 14px);
-			top: 5px;
-		}
-	}
-
-	.span__create {
-		position: relative;
-		margin-bottom: var(--indent-m);
-
-		.btn--create {
-			width: var(--icon-width);
-			padding: 0px;
-			position: absolute;
-			right: 14px;
-			top: 5px;
-			cursor: pointer;
-		}
-	}
-
-	.span__edit {
-		position: relative;
-		margin-bottom: var(--indent-m);
-
-		.btn--accept {
-			width: var(--icon-width);
-			aspect-ratio: 1 / 1;
-			padding: 5px;
-
-			position: absolute;
-			right: calc(var(--icon-width) + 14px * 2);
-			top: 5px;
-
-			display: flex;
-			align-items: center;
-			background-color: var(--color-blue);
-			color: var(--color-light);
-			border-radius: var(--border-radius);
-			border: none;
-			font-size: var(--font-size-s);
-			transition: var(--transition-default);
-
-			&:hover {
-				background-color: var(--color-dark-blue);
-			}
-
-			&:active {
-				background-color: var(--color-blue);
-			}
-
-			&:disabled {
-				background-color: var(--color-gray);
-			}
-		}
-
-		.btn--deny {
-			width: var(--icon-width);
-			aspect-ratio: 1 / 1;
-			padding: 5px;
-
-			position: absolute;
-			right: 14px;
-			top: 5px;
-
-			display: flex;
-			align-items: center;
-			background-color: var(--color-blue);
-			color: var(--color-light);
-			border-radius: var(--border-radius);
-			border: none;
-			font-size: var(--font-size-s);
-			transition: var(--transition-default);
-
-			&:hover {
-				background-color: var(--color-red);
-			}
-
-			&:active {
-				background-color: var(--color-red-active);
-			}
-
-			&:disabled {
-				background-color: var(--color-gray);
 			}
 		}
 	}

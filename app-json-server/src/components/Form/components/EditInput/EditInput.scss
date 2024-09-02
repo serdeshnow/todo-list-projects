@@ -1,0 +1,66 @@
+.span__edit {
+	position: relative;
+	margin-bottom: var(--indent-m);
+
+	.btn--accept {
+		width: var(--icon-width);
+		aspect-ratio: 1 / 1;
+		padding: 5px;
+
+		position: absolute;
+		right: calc(var(--icon-width) + 14px * 2);
+		top: 5px;
+
+		display: flex;
+		align-items: center;
+		background-color: var(--color-blue);
+		color: var(--color-light);
+		border-radius: var(--border-radius);
+		border: none;
+		font-size: var(--font-size-s);
+		transition: var(--transition-default);
+
+		&:hover {
+			background-color: var(--color-dark-blue);
+		}
+
+		&:active {
+			background-color: var(--color-blue);
+		}
+
+		&:disabled {
+			background-color: var(--color-gray);
+		}
+	}
+
+	.btn--deny {
+		width: var(--icon-width);
+		aspect-ratio: 1 / 1;
+		padding: 5px;
+
+		position: absolute;
+		right: 14px;
+		top: 5px;
+
+		display: flex;
+		align-items: center;
+		background-color: var(--color-red-active);
+		color: var(--color-light);
+		border-radius: var(--border-radius);
+		border: none;
+		font-size: var(--font-size-s);
+		transition: var(--transition-default);
+
+		&:hover {
+			background-color: var(--color-red);
+		}
+
+		&:active {
+			background-color: var(--color-red-active);
+		}
+
+		&:disabled {
+			background-color: var(--color-gray);
+		}
+	}
+}

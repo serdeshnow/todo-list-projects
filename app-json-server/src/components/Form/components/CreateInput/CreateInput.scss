@@ -1,0 +1,13 @@
+.span__create {
+	position: relative;
+	margin-bottom: var(--indent-m);
+
+	.btn--create {
+		width: var(--icon-width);
+		padding: 0px;
+		position: absolute;
+		right: 14px;
+		top: 5px;
+		cursor: pointer;
+	}
+}

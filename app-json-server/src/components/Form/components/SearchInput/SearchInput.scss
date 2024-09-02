@@ -1,0 +1,12 @@
+.span__search {
+	position: relative;
+	margin-bottom: var(--indent-m);
+
+	.search__logo {
+		width: var(--icon-width);
+		padding: 0px;
+		position: absolute;
+		right: calc(14px + 36px + 14px + 14px);
+		top: 5px;
+	}
+}
