@@ -1,0 +1,37 @@
+* {
+	--color-app-bg: #d9dde8;
+	--color-white: #ffffff;
+	--color-light-gray: #eceef3;
+	--color-gray: #748392;
+	--color-dark: #1e1f20;
+	--color-black: #000000;
+	--color-light-blue: #f5f5fd;
+	--color-blue: #3b37ff;
+	--color-dark-blue: #2420e2;
+	--color-red: #e00000;
+	--color-red-active: #fc0000;
+
+	--font-size-sm: 15px;
+	--font-size-md: 18px;
+	--font-size-lg: 24px;
+
+	--font-weight-thin: 300;
+	--font-weight-regular: 400;
+	--font-weight-semibold: 600;
+
+	--border-radius-sm: 4px;
+	--border-radius-md: 8px;
+
+	--box-shadow: 0px 5px 30px rgba(59, 55, 255, 0.20);
+
+	--spacing-xxs: 3px;
+	--spacing-xs: 5px;
+	--spacing-sm: 10px;
+	--spacing-md: 15px;
+	--spacing-lg: 30px;
+	--spacing-xl: 40px;
+	--padding--width: min(320px, 16.667vw);
+
+	--transition-default: all 0.15s ease-in-out;
+	--transition-slow: all 0.3s ease-in-out;
+}

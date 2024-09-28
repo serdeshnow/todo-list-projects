@@ -1,0 +1,28 @@
+.footer {
+	position: absolute;
+	bottom: 0;
+	padding-block: var(--spacing-sm);
+	padding-inline: var(--spacing-lg);
+	margin-bottom: var(--spacing-xs);
+	max-height: 56px;
+	width: 100%;
+	justify-content: space-between;
+	flex: 1 0 auto;
+	background-color: var(--color-blue);
+	border-radius: var(--border-radius-md);
+	color: var(--color-white);
+
+	&__left-bar, &__right-bar {
+		gap: var(--spacing-sm);
+		align-items: center;
+	}
+
+	&__logo-link, &__author-link {
+		font-size: var(--font-size-sm);
+		color: var(--color-white);
+	}
+
+	&__todo-info-description {
+		cursor: default;
+	}
+}

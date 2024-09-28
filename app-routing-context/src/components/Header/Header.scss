@@ -1,0 +1,37 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--color-blue);
+	border-radius: var(--border-radius-md);
+	padding: var(--spacing-sm) var(--spacing-md);
+	margin-bottom: var(--spacing-sm);
+	color: var(--color-white);
+
+	a, a:visited {
+		color: var(--color-white);
+	}
+
+	&__left-bar, &__right-bar {
+		align-items: center;
+		gap: var(--spacing-md);
+	}
+
+	&__techs {
+		&-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: var(--spacing-sm);
+			font-size: var(--font-size-sm);
+		}
+
+		&-item {
+			padding: 5px 15px;
+			font-weight: var(--font-weight-thin);
+			background-color: var(--color-dark-blue);
+			border-radius: var(--border-radius-md);
+			cursor: default;
+		}
+	}
+}
+

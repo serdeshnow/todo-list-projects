@@ -1,0 +1,135 @@
+@font-face {
+	font-family: 'inter';
+	src: url("../assets/fonts/Inter.ttf");
+}
+
+body {
+	background-color: var(--color-app-bg);
+	margin: 0;
+	font-family: 'inter', sans-serif;
+	font-weight: var(--font-weight-regular);
+	font-size: var(--font-size-md);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	min-height: 100vh;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	padding-top: var(--spacing-xs);
+	padding-inline: var(--padding--width); /* padding for all application */
+	flex: 1 0 auto;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+:where(ul, ol):where([class]) {
+	padding-left: 0;
+}
+
+body,
+:where(blockquote, figure):where([class]) {
+	margin: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+	font-weight: inherit;
+	font-size: var(--font-size-md);
+	margin-block: 0;
+}
+
+:where(dd[class]) {
+	margin-left: 0;
+}
+
+:where(fieldset[class]) {
+	margin-left: 0;
+	padding: 0;
+	border: none;
+}
+
+:where(ul[class]) {
+	list-style: none;
+}
+
+:where(address[class]) {
+	font-style: normal;
+}
+
+p {
+	--paragraphMarginBottom: 14px;
+
+	margin-block: 0;
+}
+
+/**
+	 Внешний отступ вниз для параграфа без атрибута class,
+	 который расположен не последним среди своих соседних элементов
+	*/
+p:where(:not([class]):not(:last-child)) {
+	margin-bottom: var(--paragraphMarginBottom);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+	font: inherit;
+}
+
+html {
+	height: 100%;
+}
+
+html,
+:has(:target) {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100%;
+	line-height: 1.5;
+}
+
+svg *[fill] {
+	fill: currentColor;
+}
+
+svg *[stroke] {
+	stroke: currentColor;
+}
+
+svg * {
+	transition-property: fill, stroke;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	::before,
+	::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
